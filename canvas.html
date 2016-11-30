@@ -1,0 +1,57 @@
+<! DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Canvas</title>
+	<meta name = "description" content = "canvas drawing">
+	<meta name = "author" content = "Vandenberg">
+		
+		<link rel = "stylesheet" href = "css.css">
+	</head>
+
+	<body>
+
+		<div id =  "banner" ><a href = "home.html"> home</a></div>
+
+		<h1>Canvas drawing</h1> 
+		
+		<canvas id = "MyCanvas" width= "600" height ="600" style = "border: 2px solid #00FF00">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+
+		<script type="text/javascript">
+			var l1 = document.getElementById("MyCanvas");
+			var l1tx =l1.getContext("2d");
+			l1tx.beginPath();
+			l1tx.moveTo(300,000);
+			l1tx.lineTo(000,600);
+			l1tx.lineTo(600,300);
+			l1tx.fillStyle = "#00FF00";
+			l1tx.fill();
+			
+			l1tx.beginPath();
+			l1tx.moveTo(300,600);
+			l1tx.lineTo(0,0);
+			l1tx.lineTo(600,300);
+			l1tx.fillStyle = "#00FF00";
+			l1tx.fill();
+			
+			l1tx.beginPath();
+			l1tx.moveTo(00,300);
+			l1tx.lineTo(600,600);
+			l1tx.lineTo(300,000);
+			l1tx.fillStyle = "#00FF00";
+			l1tx.fill();
+
+						l1tx.beginPath();
+			l1tx.moveTo(00,300);
+			l1tx.lineTo(600,0);
+			l1tx.lineTo(300,600);
+			l1tx.fillStyle = "#00FF00";
+			l1tx.fill();
+
+
+		</script>
+
+	</body>
+</html>
