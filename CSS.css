@@ -1,0 +1,40 @@
+body{
+	color: #00FF00;
+	background:black;
+
+}
+
+#banner{
+	background-image : url("logo.jpg");
+	background-repeat: no-repeat;
+	height: 125px;
+	text-align: right;
+	font-size: 20;
+}
+
+#tacky{
+	color:white;
+	transition: color 2s;	
+}
+
+
+#tacky:hover{
+	color:black;
+	background-color:#00FF00;
+}
+
+#tacky2{
+	transform: rotate(180deg);
+}
+
+a:link {
+    	color:#00FF00;
+}
+
+a:visited {
+    	color:#00FF00;
+}
+
+h1{
+	text-align: center;
+}
